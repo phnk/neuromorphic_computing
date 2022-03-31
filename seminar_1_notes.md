@@ -1,5 +1,5 @@
-# Seminar 1 - Learning approcahes
-Motivation: Reponse amplitute not fixed but can change over time. Synaptic plasticity.
+# Seminar 1 - Learning approaches
+Motivation: Response amplitude is not fixed but can change over time. Synaptic plasticity.
 
 ## Supervised Learning
 * Spike Layer Error Reassignment (SLAYER)
@@ -13,7 +13,7 @@ Motivation: Reponse amplitute not fixed but can change over time. Synaptic plast
 
 ## Unsupervised Learning
 
-## Reward based learning
+## Reward-based learning
 
 
 # References
