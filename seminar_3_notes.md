@@ -131,4 +131,95 @@ Problems:
 ### Dynamics System 3
 [Link](https://www.youtube.com/watch?v=4s-f7Wzp92U)
 
+States can be defined by what has happened in the past, but also what will happen in the future.
+
+Example of such state defined by future:
+1. Observable operator models
+2. Predictive state representation
+3. Multiplicity automata
+
+#### State-free modeling of temportal system
+Engineering view on "systems": we map input directly to output where we do not care how the system functions.
+
+Continuous vs digital-time signals and systems
+Before computers: continuous to continuous
+Now: we take continuous signals, sample them and get digital signals.
+
+Different times of filters that perform the sampling:
+1. Linear filter (very powerful)
+	- Linear systems: possible to prove correct in some capacity. (currently) not possible for NNs.
+2. Time invariant systems
+	- As time goes on, local transforms do not change
+	- Together: "LTI" - linear time-invariant systems
+3. Causal systems
+	- Only depends on past things, and not future things
+4. BIBO stable
+
+Linear systems: frequency-domain analysis (fourier or laplace transforms). That is why linear systems are so powerful in signal processing.
+
+##### Context-free grammers (CFG)
+Defined by: a finite set of variables, a start variable, a finite set of terminals, a finite set of production rules. A CFG defines a language i.e. a set of finite symbom sequences (words) over the terminals through derivations. (Tree form)
+
+- Grammers are a prime tool to describe long-range dependencies in symbol sequences
+
+##### Qualitative theory of DS: Attractors, bifurcations, chaos
+- Example in the slides (Title: Our tutorial exampel)
+- Vector fields to describe that is happening in such a system
+- The vector field will guide the agent, to give it a trajectory
+- Plotting several trajectories with different starting points gives a phase portrait.
+- Bifurcations: when a control parameter paesses through a critical value, the phase potrait changes its nature.
+
+### Dynamics system 4
+[Link](https://www.youtube.com/watch?v=9M46gfEQLh0)
+
+Phase transition vs Bifurcations (not the same thing)
+Most famous phase transition: water ice to liquid at 0C, liquid to gas at 100C.
+
+#### Difference between PT and bifurcations
+- Maths is different
+- PT only defined when we go to inifite
+- PT free energy suffers a disconitnuity when we change the control parameters
+- There are connections, but is not the same thing.
+
+#### Attractors mathematically defined
+- Attractors more interesting to understand the world compared to repellors
+- Repellors are mathematically there, but not observable
+- We are all attractors, otherwise we would not exist. This is why attractors are interesting.
+
+Topological dynamics (a more abstract way to encaptulate all dynamics)
+Tries to abstract away from geometry. What does it mean to be close?
+Only thing we care here is to define what it means to be close, neighbourhood
+
+Topological dyamics is nice because we can define attractors formally.
+Attractors, A, are a subset of a topological space if the
+- If you are in A, you will stay in A no matter what.
+- If you are close enough to A, you will be attracted to it, there is no escape.
+
+#### Connections between symbols and attractors
+In our brain we have "objects"
+Our brain is a high dynamical system
+One natural modeling approach: symbols = attractors in neural dyamics
+
+##### Other modelling approaches
+1. discrete regions in neural state space
+2. individual neurons or areas
+3. dimensions / subspaces in neural state space
+4. saddle nodes
+5. conceptors
+
+##### Symbols as attractors
+Pros:
+- temporal stability
+- hopfield networks
+Con:
+- inherent conflict: attractors by defintion capture neural trajectory forever, while thinking transits from concept to concept
+- attempts to resolve this con: neural noise, generalized / modified attractor concepts / attractor-like phenomena
+
+Opinion: We do not know how to do this in high dimensional systems. All our examples are from low dimensional systems.
+
+#### Non-autonomous dynamical systems
+We have input, hence a non autonomous system.
+Def: x(n+1) = T\_n(x(n)) (we have input)
+Example: a RNN trained on video input stream to predict the next symbol using grammers.
+
 
