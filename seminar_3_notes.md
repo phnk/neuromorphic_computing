@@ -41,26 +41,26 @@ Read the paper in onedrive.
 #### What are dynamical systems?
 Anything that involves time
 Examples:
-	* The universe
-	* Life on earth
-	* A bitstream
-	* Mathematics
+* The universe
+* Life on earth
+* A bitstream
+* Mathematics
 
 It is impossible to not be a dynamical system
 
 Fundamental decisions before modelling starts:
-	1. selection: what subsystem is moduled
-	2. perceptive: what aspects of the subsystem are modelled
+1. selection: what subsystem is moduled
+2. perceptive: what aspects of the subsystem are modelled
 
 Modeling tools:
-	1. Symbolic vs Numerical
-	2. Deterministic vs Non-deterministic/Stochastic
-	3. Autonomous vs Non-autonomous
-	4. Low-dimensional vs High-dimensional
-	5. Descrete time vs Contiunous time
-	6. Linear vs non-linear
-	7. Homogeneous vs non-homogeneous
-	8. Stationary, vs non-stationary/evolutionary
+1. Symbolic vs Numerical
+2. Deterministic vs Non-deterministic/Stochastic
+3. Autonomous vs Non-autonomous
+4. Low-dimensional vs High-dimensional
+5. Descrete time vs Contiunous time
+6. Linear vs non-linear
+7. Homogeneous vs non-homogeneous
+8. Stationary, vs non-stationary/evolutionary
 
 #### Basic ingredients
 ...., x(n-2), x(n-1), x(n), x(n+1), x(n+2) ....., x(n+1), x(n+2) .....
@@ -70,35 +70,35 @@ Sequence of states = trajectory
 Two views, natural science view: wants a system that is isolated so we can look at the system alone. The engineering view: Important that the system functions correctly in the end (do not care about the internal states). Reliable input -> output system.
 
 #### A zoo of Finite-state models
-	1. Deterministic finite-state automa (DFA)
-	2. Moore and Maely-machines
-	3. Non-deterministic finite-state automata
-	4. Finite-dimensional makrov chains
-	5. Controlled markov chains
-	6. Hidden markov models
-	7. Controlled hidden markov model, also known as Partially Observable Markov Decisions processes
+1. Deterministic finite-state automa (DFA)
+2. Moore and Maely-machines
+3. Non-deterministic finite-state automata
+4. Finite-dimensional makrov chains
+5. Controlled markov chains
+6. Hidden markov models
+7. Controlled hidden markov model, also known as Partially Observable Markov Decisions processes
 
 
 ### Dynamics System 2
 [Link](https://www.youtube.com/watch?v=gQOu6NTDBGo)
 
 #### Cellular Automata (CA)
-	* Can be defined in 1-dim, 2-dim..., systems
-	* Popular for pattern formation
-	* Simpelest kind of model for spatio-temporal dynamics
+* Can be defined in 1-dim, 2-dim..., systems
+* Popular for pattern formation
+* Simpelest kind of model for spatio-temporal dynamics
 
 #### Petri-net
-	* Modelling spatially distributed systems with flows and transformations of material or information
-	* Components:
-		- Places (physical places or agents)
-		- Transactions (production thing needs different tokens to finish)
-		- Arcs
-		- Tokens (things agents can move)
-	* Wide diversity
-		- Asynch switching
-		- Parallel programming
-		- Transportation and manufactring logistics
-		- Business processes
+* Modelling spatially distributed systems with flows and transformations of material or information
+* Components:
+	- Places (physical places or agents)
+	- Transactions (production thing needs different tokens to finish)
+	- Arcs
+	- Tokens (things agents can move)
+* Wide diversity
+	- Asynch switching
+	- Parallel programming
+	- Transportation and manufactring logistics
+	- Business processes
 
 #### Dynamical Bayesian networks
 Idea: describe the state of stochastic DS at time N by the values of a finite collection of finite-valued input, hidden and output.
