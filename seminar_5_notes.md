@@ -1,7 +1,7 @@
 # Seminar 5
 
 # Homework (Hardware)
-[Video #1](https://www.youtube.com/watch?v=u9pulFlavIM)
+# [Video #1](https://www.youtube.com/watch?v=u9pulFlavIM)
 * What is Von Neumann Architecture?
 	- See previous lecture notes.
 * What do we want to achieve with Neuromorphic hardware?
@@ -31,7 +31,7 @@
 	- Machine reasoning
 * NC high potential for space operations
 
-[Video #2](https://tube.switch.ch/videos/db393d1d)
+# [Video #2](https://tube.switch.ch/videos/db393d1d)
 ## Giacomo Indiveri
 * One term, multiple communities
 	- Neuromorphic Engineering
@@ -126,5 +126,60 @@
 	- Gets x, y events from the sensor
 	- Puts into a matrix of LIF neurons
 	- When the entire things reaches some threshold, it spikes
+	- Applications: Use to detect the colours of cards. 
+	- Uses event-based sensing to do it
 
-Continue at 1h2m
+## Kwabena Boahen
+* 3D silicon brains
+* Described GPT-3
+* Described attention
+* Attention: If Query \approx Key, then Input -> Value
+* Bilinear transformation
+* To decrease error a small amount, we need to increase the compute drastically
+* "On-device AI"
+	- Energy-saving
+	- Personalized
+	- Real-time
+	- Secure
+* Transformer Net
+	- Size = depth x width
+	- Dense local connections
+	- Sparse global projections
+* "Compute in memory"
+	- Energy scales as size^2
+* Memory has shifted from 2D to 3D where we stack memory in layers now
+	- We can fit GPT-3 on these.
+* 3D integration
+	- Energy scales as size^1.5 for depth << width
+	- "Dark silicon"
+* Making Deep-Net's dense signals sparse
+	- When its input is swept, a neruon switches once, not many times
+	- Binary vs Unary
+* 3D + Unary
+	- Energy scales as size for depth << width
+	- Thermally viable
+* Move from cloud to edge
+	- From kilowatts to watts
+
+# [Video #3](https://www.youtube.com/watch?v=jhQgElvtb1s)
+* Proving the value of spiking neuromorphic hardware
+* We want to make chips that solve real world problems
+* Need new architecture that is efficient
+* Where does the brains efficiency and capability come from? How can we realise this in hardware?
+* SNN is the simpelest addition to ANNs that greatly broadens the algorithimtic space we are capable of computing.
+* Loihi
+	- Event based processing pushed all the way to the transistors
+	- Async
+* The challenge: SNN algorithm discrovery
+	- Deep learning derivied approaches
+	- New ideas guided by neuroscience
+	- Mathematically Formalized
+* DNN-to-SNN conversion
+	- Keyword spotting
+	- 5-10x lower energy
+	- Caveats: Reduced accuracy, batchsize=1
+* Searching small world networks with loihi
+	- Dijktras
+* Solving constraint satifaction problems
+	- 4ms time to solution on 4 coloring of world map and soduku
+
