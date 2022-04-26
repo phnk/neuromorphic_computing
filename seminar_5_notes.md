@@ -1,7 +1,7 @@
 # Seminar 5
 
 # Homework (Hardware)
-# [Video #1](https://www.youtube.com/watch?v=u9pulFlavIM)
+## [Video #1](https://www.youtube.com/watch?v=u9pulFlavIM)
 * What is Von Neumann Architecture?
 	- See previous lecture notes.
 * What do we want to achieve with Neuromorphic hardware?
@@ -182,4 +182,76 @@
 	- Dijktras
 * Solving constraint satifaction problems
 	- 4ms time to solution on 4 coloring of world map and soduku
+* Research frontier
+	- Inference and learning of sparse feature representations
+	- Video and speech recognition
+	- Event-based camera processing
+	- Chemosensing
+	- Robotics
+	- Adaptive dynamic control
+	- Anomaly detection for security and industrial monitoring
+	- Optimization: Constraint satisfaction, QUBO, contex optimization
+	- Autonomy: SLAM, planning, closed-loop behaviour
+
+# Seminar
+* Brain-inspired computing needs a master plan
+	- Need to simulate same amount of neruons as the brain in a ANN u need MWs of power.
+	- Motivations why we are doing what we are doing.
+	- Article in Onedrive with annotations.
+
+* Intel Neuromorphic Computing Workshop in April 2022
+
+* [Quantum x NC](https://www.youtube.com/watch?v=IP_GmTKYlsc)
+
+## Hardware Seminar (Mattias)
+* "Silicon neurons and synapses"
+* Use analog circuts to model the neurondynamics
+* Main blocks of silicon-neurons "Soma"
+	1. Temporal Integration
+	2. Spike generation
+	3. Refractory mechanism
+	4. Spike ferq adapation
+	5. Spike threshold adapation
+* Wide set of circuit design styles (or decisions)
+	- When are each of these used? When and why are x better than y?
+	- We can accelerate all of these styles?
+* Placicity
+	- On chip learning
+	- We need a circut block to update weights
+* SoTA
+	- CMOS vs FDSOI?
+	- What is the hurdle to experimental SoTA?
+
+## Event Triggered Extended Kalman Filter (Moumita)
+* Fundamentals of State estimation
+* System Dynamics
+	- x* = Ax + Bu + Gw
+	- y = Cx + v
+* Estimator Dynamics
+* Kalman filter
+* Event triggered Estimation
+	- Smart Sensor
+	- Event-tiggered Scheduler
+	- We process when there is a spike
+
+## A neuromorphic colution to CSPs (Kim)
+* Constraint satisfaction problem
+* Common solutions given by variable elimitation
+* Focus on 4 principles
+* Motifs from the paper
+	- Winner-take-all for variables
+	- OR for constraints
+	- Principal neurons: variables to the system. does main computation
+	- Auxillary neurons: constraints
+	- Power of motifs: Modularity
+* Network states
+	- x(t) is the network state
+	- p(t) is the unique stationary distribution
+	- Energy function E(X) = ....
+* Stochastic input
+	- See slide for information
+	- The search function can take a shortcut and bypass high energy states to find the low energy states
+* Temperature
+	- If you get a good solution it scales up the landscape so its harder to escape the good solution
+
 
