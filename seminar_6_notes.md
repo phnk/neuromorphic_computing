@@ -159,7 +159,7 @@ See: time-complexity\_p\_vs\_np.pdf
 
 ### Seminar (Hannah)
 * Simulators (SNN)
-* Paper goal: Guidance for users to choose SNN simulators for development and guidance in development of future SNNs simulators.
+* [Paper](https://www.sciencedirect.com/science/article/pii/S0925231221003969) goal: Guidance for users to choose SNN simulators for development and guidance in development of future SNNs simulators.
 * Tested 5 simulators on non-computational neuroscience tasks. Tested of speed, scalability and flexability.
 	- NEST, Brian2, Brian2GeNN, NengoLoihi, BindsNET
 	- Check BindsNET as the focus is on ML/RL? (How does this work?, what do we mean?)
