@@ -155,6 +155,31 @@ See: seminar\_6.py
 ### P vs NP and complexity 10 minute seminar
 See: time-complexity\_p\_vs\_np.pdf
 
-
-
 ## Seminar
+
+### Seminar (Hannah)
+* Simulators (SNN)
+* Paper goal: Guidance for users to choose SNN simulators for development and guidance in development of future SNNs simulators.
+* Tested 5 simulators on non-computational neuroscience tasks. Tested of speed, scalability and flexability.
+	- NEST, Brian2, Brian2GeNN, NengoLoihi, BindsNET
+	- Check BindsNET as the focus is on ML/RL? (How does this work?, what do we mean?)
+	- All different simulators has different adventages and disadvantages
+
+### Seminar (Mine)
+No comments
+
+### Seminar (Akshit)
+* Event-based Vision
+* Inspired by the human vision
+	- Cones (Color) and rods (Night vision)
+	- Only reports the change in the scene, not the scene itself
+	- Efficient way to decrease the data transfer
+	- Riemann (discretise in the x axis) vs Lebesgue (discretise in the y axis) Q: How is this used in real systems? For me its easy to internalise riemann sampling but not the other
+* Weakness of conventional vision
+	- Moving objects undersampled, background oversampled
+	- Overwhelmed with irrelevent data
+* Strength of Neuromorphic Vision
+	- "Volume of data goverened by the activity in the field of view"
+	- Good for SLAM. Q: has someone done this yet?
+* Implications for Robotics and ML
+	- Feedback control loop can run at high frequenices
