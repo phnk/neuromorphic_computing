@@ -108,6 +108,36 @@
 
 
 [Neural Coding In the book](https://neuronaldynamics.epfl.ch/online/Ch7.S6.html) 
+* The problem of Neural Coding
+	- In the book we use different ways to quantify spike trains (firing rate often used).
+	- However we are only measuring the frequency in some way and the question is if neurons transmit other information using the spikes.
+	- This type of information is neural code.
+* Limitations of spike count coding
+	- A fly can react to stimuli in the range of 30-40 ms, not enough time to perform some average over spikes
+	- Humans can detect changes in visual stimuli in a few hundred millisteconds. Not enough time to perform any averages.
+	- Spikes are just convinient to transmit analog output
+	- Temporal averaging only works for constant or slowly varying stimuli
+* Limitations of Peri-Stimulus-Time Histogram (PSTH)
+	- Relies on multiple trials to build up.
+	- Example: A frog that wants to catch a fly cannot wait for the fly to take the same trajectory multiple times to learn how to.
+	- Relies on the assumption that there are always populations of neurons with similar properties
+* Limitations of rate as a population average
+	- Assumption: Homogeneous neuron populations with identical connections. This is hardly realisitic
+	- However: rate of population activity may be feasable
+	- Potential problem: Neuronal coding and decoding schemes lies in the normalization by division
+* Candidate temporal codes
+	- Time-to-first-spike: Latency code, where different stimuli yield different spike letencies, yet they are consistent over trials
+		1. We only care about the time to first spike. If more spikes come we ignore them
+		2. Since we only transmit 1 spike per stimuli it is clear that only the timing is important and not the number of spikes
+	- Phase: Same as above, but instead of a single event we see it as a periodic signal where the oscillations serves as an internal reference signal. Then spikes could encode information using the oscillations as a reference.
+	- Correlations and Synchrony
+		1. We can use spikes from other neurons as reference signal for a spike coding.
+		2. Pair of many neurons spiking together can signify a special event
+		3. Or we could use pulses where after one neuron spikes, others spike after some small timestep. 
+	- Stimulus Reconstruction and Reverse Correlation
+		1. We average over some time window (such as 100ms) where the spike is in the middle of said time windiw. We can then create some average used to transport information.
+	- Rate versus temporal codes. The divide between spike codes and firing rate is not clearly drawn as some codes can be interpreted or transfored from one into the other.
+	- "What is important, in our opinion, is to have a coding scheme which allows neurons to quickly respond to stimulus changes"
 
 [SpyTorch: Surrogate gradient learning in spiking neural networks in 20 minutes with PyTorch](https://www.youtube.com/watch?v=xPYiAjceAqU)
 
