@@ -1,7 +1,7 @@
 # Seminar 7
 
-## Homework
-[Neuromorphic Learning Lecture](https://tube.switch.ch/videos/RaNHxtfdVe)
+# Homework
+## [Neuromorphic Learning Lecture](https://tube.switch.ch/videos/RaNHxtfdVe)
 ### Online Learning
 * Offline learning: We decide some timestep where we collect all experiance and then from that decide how to update our parameters
 * Online learning: We want to update the parameters after each relevant time step (more suitable for NC)
@@ -107,7 +107,7 @@
 	- SPARCE is an example of this
 
 
-[Neural Coding In the book](https://neuronaldynamics.epfl.ch/online/Ch7.S6.html) 
+## [Neural Coding In the book](https://neuronaldynamics.epfl.ch/online/Ch7.S6.html) 
 * The problem of Neural Coding
 	- In the book we use different ways to quantify spike trains (firing rate often used).
 	- However we are only measuring the frequency in some way and the question is if neurons transmit other information using the spikes.
@@ -139,8 +139,21 @@
 	- Rate versus temporal codes. The divide between spike codes and firing rate is not clearly drawn as some codes can be interpreted or transfored from one into the other.
 	- "What is important, in our opinion, is to have a coding scheme which allows neurons to quickly respond to stimulus changes"
 
-[SpyTorch: Surrogate gradient learning in spiking neural networks in 20 minutes with PyTorch](https://www.youtube.com/watch?v=xPYiAjceAqU)
+## [SpyTorch: Surrogate gradient learning in spiking neural networks in 20 minutes with PyTorch](https://www.youtube.com/watch?v=xPYiAjceAqU)
+* We want to build a task-optimized SNN like we do with ANNs
+	- Requirements: Input and output
+	- After input and output defined, we need to worry about one thing: connectivity. We will decide the connectivity with surrogate gradients
+	- Typical input: Spatiotemporal spike trains
+	- Typcial output: Linear combination of filtered output spike trains. Look for the maximum of the resulting curves to reduce the temporal compnent
+* How do we train?
+	- Well as we have learned before, SNNs are RNNs in a computer science sense
+	- ***Problem: Derivatives of spikes is ill-defined***, "hard" threshold. Its zero or inifinite.
+	- This leads to that there is no gradient, hence no where to walk down in the space. This has the consequence of gradient based methods not working.
+	- ***Solution: Surrogate gradients***
+	- Whenever we compute we compute derivatives, we compute a surrogate derivative that is smooth
+	- This gives us a space that is smooth, hence gradient methods work.
+* Notebooks showcase: [SpyTorch](https://github.com/fzenke/spytorch)
 
-[SpyTorch](https://github.com/fzenke/spytorch)
+# Seminars
 
-## Seminars
+
