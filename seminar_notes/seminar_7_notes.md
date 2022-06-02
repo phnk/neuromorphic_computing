@@ -156,4 +156,20 @@
 
 # Seminars
 
+## Event-triggered sensor pose estimation
+* Pose = the orientation and position. Consider x, y, z. Position is change along some axis. Orientation is the rotation around some axel.
+* Even based vision sensor
+	- Sparse output consiting of stream of events rather than frames
+	- Onboard clock can be used to sample, similar to a normal camera?
+	- Only measures change. "pixels" that do not change gives no output
+* Espee Algorithm
+	- Used to perform pose estimation from event information to some map
+* Main goal: use event based cameras by minmizing the error between the event based and lidar to get some error. after we have this error we use EKF to minimize it.
+
+## Summary of Capocaccia workshop
+* Started by Caever meed
+* Organized: Institute of neuroimformatics, Zurich
+* Norse simulator - Check github
+* Spike-time-based gradient descent
+
 
