@@ -1,8 +1,9 @@
 # Seminar 8
 
+## Homework
+None
 
 ## Seminars
-
 ### Mine
 * No comments
 
@@ -23,11 +24,3 @@
 * Dynapse
 	- 4 chips with 4 cores
 	- Showing examples
-
-## Homeowork
-### [What is an event-driven sensors?](https://tube.switch.ch/videos/5a6c3a74)
-
-
-### [HOW TO PROCESS INFORMATION FROM EVENT-DRIVEN SENSORS?](https://tube.switch.ch/videos/kTa2YuDI3n)
-
-
