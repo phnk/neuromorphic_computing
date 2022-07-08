@@ -75,7 +75,8 @@ def run_pipeline(pipeline, episode_count):
 
             if new_result[2]:
                 print("done")
-                pipeline.reset_state_variables()
+                environment.reset()
+
 
         reward_list.append(total_reward)
         print(f"Episode {i} resulted in total reward of: {total_reward}")
