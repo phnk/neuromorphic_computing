@@ -83,7 +83,7 @@ print(q_net)
 device = torch.device("cuda" if torch.cuda.is_available() and gpu else "cpu")
 log_dir = "logs"
 
-env = gym.make("LunarLander-v2")
+env = gym.make("Follow-The-Leader")
 env = Monitor(env, log_dir)
 
 print('State shape: ', env.observation_space.shape)
@@ -192,7 +192,7 @@ SNN.add_connection(inpt_middle, source="input layer", target="hidden layer")
 SNN.add_connection(middle_out, source="hidden layer", target="output layer")
 
 #snn_env = GymEnvironment("LunarLander-v2")
-snn_env = GymEnvironment("BreakoutDeterministic-v4")
+snn_env = GymEnvironment("Follow-The-Leader-v0")
 snn_env.reset()
 
 
@@ -208,7 +208,7 @@ pipeline = EnvironmentPipeline(
     output="output layer",
     reset_output_spikes=True,
     time=500,
-    overlay_input=4,
+    overlay_input=1,
     history_length=1,
     plot_interval=1,
     #render_interval=1,
