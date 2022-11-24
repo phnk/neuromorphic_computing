@@ -83,14 +83,15 @@ if __name__ == "__main__":
 
     model.learn(total_timesteps=timesteps, log_interval=4)
 
-    sd = model.policy.q_net.state_dict()
     #print(sd)
     #model.save("dqn_follow_trained")
     #plot_results(log_dir)
 
     model = DQN.load("dqn_follow_trained", env=env)
 
-    for i in range(3):
+    sd = model.policy.q_net.state_dict()
+
+    for i in range(0):
         obs = env.reset()
         total_reward = 0
         while True:
@@ -145,7 +146,7 @@ if __name__ == "__main__":
     )
 
     reward_list = []
-    for i in range(3):
+    for i in range(1):
         total_reward = 0
         pipeline.reset_state_variables()
         is_done = False
